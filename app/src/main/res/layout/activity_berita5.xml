@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".berita5">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backbutton"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/btn_backFromDetailArtikel"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="EduPet"
+                android:textColor="@color/brownPrimary"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomDetailProduct">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:id="@+id/detail_produk"-->
+                    <!--                android:text="Detail Produk"-->
+                    <!--                android:textAlignment="center"-->
+                    <!--                android:textStyle="bold"-->
+                    <!--                android:textSize="24sp"/>-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparant">
+
+                        <!-- Isi tampilan Anda di sini -->
+
+
+                        <ImageView
+                            android:id="@+id/detailImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/berita5" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/greyPrimary"
+                        android:text="Vitamin"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Satgas Terapkan Bio Security untuk Tekan Penyebaran Kasus PMK Hewan Ternak"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/detailName"
+                        android:layout_marginBottom="20dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/detailDescriptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Satgas Penanganan Penyakit Mulut dan Kuku (PMK) menyatakan akan terus berupaya menekan laju penyebaran kasus PMK di Indonesia, salah satunya dengan menerapkan tindakan pengamanan bio security.
+
+\n\nJuru Bicara Pemerintah untuk Penanganan PMK Wiku Adisasmito menjelaskan, bio security adalah semua tindakan pertahanan pertama untuk pengendalian wabah dan dilakukan untuk mencegah segala kemungkinan penularan atau kontak dengan ternak tertular di lingkungan peternakan.
+
+\n\nDia mengatakan, praktek ini dapat diperluas hingga ke lintas wilayah administratif lainnya sehingga rantai penyebaran penyakit diminimalisir.
+
+\n\nPertama, dengan penerapan testing menggunakan metode RT PCR pada satu peternakan, sebagai representasi keadaan di dalam peternakan. Kemudian, distribusi alat testing juga dilakukan secara masif ke daerah-daerah.
+
+\n\nKedua, dengan vaksinasi yakni diprioritaskan pada ternak sehat yang berada di zona merah dengan populasi ternak besar, serta angka kasus tinggi. Vaksinasi juga dilakukan di daerah-daerah yang masuk zona hijau.
+
+\n\nKetiga, dengan pengobatan. Obat-obatan dan vitamin diberikan untuk mengobati gejala klinis yang tampak, serta meningkatkan imunitas dan stamina hewan ternak,
+
+\n\nKeempat, pemotongan bersyarat terhadap hewan ternak yang terkonfirmasi PMK sesuai anjuran pemerintah.
+
+"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle=""
+                        android:layout_marginBottom="30dp"
+                        />
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

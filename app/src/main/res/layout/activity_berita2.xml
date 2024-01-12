@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".berita2">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backbutton"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/btn_backFromDetailArtikel"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="EduPet"
+                android:textColor="@color/brownPrimary"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomDetailProduct">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:id="@+id/detail_produk"-->
+                    <!--                android:text="Detail Produk"-->
+                    <!--                android:textAlignment="center"-->
+                    <!--                android:textStyle="bold"-->
+                    <!--                android:textSize="24sp"/>-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparant">
+
+                        <!-- Isi tampilan Anda di sini -->
+
+
+                        <ImageView
+                            android:id="@+id/detailImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/berita2" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/greyPrimary"
+                        android:text="Vitamin"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Mentan Syahrul Dorong Peternak Serap Kredit Usaha Rakyat"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/detailName"
+                        android:layout_marginBottom="20dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/detailDescriptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Menteri Pertanian (Mentan) Syahrul Yasin Limpo mengajak para peternak Indonesia untuk memperkuat hilirisasi pangan asal ternak sebagai kekuatan utama masa depan bangsa. Peternakan tak hanya untuk makan saja, tetapi sekaligus menjadi lapangan kerja.
+\n\n'Peternakan adalah sesuatu yang sangat penting, karena itu terkait dengan nutrisi yang ada dan peternakan tidak hanya untuk makan tetapi sekaligus lapangan kerja.
+Dan bisa dilakukan oleh rakyat secara langsung,' ujar Syahrul kepada para wartawan dalam puncak peringatan bulan bakti peternak dan kesehatan hewan ke-187 di Asrama Haji Donohudan, Kabupaten Boyolali, Jumat (22/9/2023).
+
+\n\nMenurutnya, Presiden sudah mempersiapkan dana untuk membantu permodalan masyarakat yakni melalui Kredit Usaha Rakyat (KUR). Pihaknya bersama jajaran tingkat kabupaten siap membantu untuk memfasilitasi masyarakat yang akan menggunakan fasilitas KUR di dalam program peternakan.
+
+\n\n Melalui peringatan bulan peternak dan kesehatan hewan ini, lanjut dia, menjadi bagian-bagian untuk melakukan konsolidasi berbagai konsep dan program. Baik yang sementara ini berlangsung difaktualisasi dengan melihat hasil-hasil yang ada."
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle=""
+                        android:layout_marginBottom="30dp"
+                        />
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

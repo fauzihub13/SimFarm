@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".berita6">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backbutton"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/btn_backFromDetailArtikel"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="EduPet"
+                android:textColor="@color/brownPrimary"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomDetailProduct">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:id="@+id/detail_produk"-->
+                    <!--                android:text="Detail Produk"-->
+                    <!--                android:textAlignment="center"-->
+                    <!--                android:textStyle="bold"-->
+                    <!--                android:textSize="24sp"/>-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparant">
+
+                        <!-- Isi tampilan Anda di sini -->
+
+
+                        <ImageView
+                            android:id="@+id/detailImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/berita6" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/greyPrimary"
+                        android:text="Vitamin"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Peternak Wajib Kenali Penyebab dan Ciri PMK untuk Lindungi Ternak"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/detailName"
+                        android:layout_marginBottom="20dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/detailDescriptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="
+Setelah sempat menghilang sejak 1983, kini Penyakit Kuku dan Mulut (PMK) kembali menulari hewan ternak di berbagai provinsi. Oleh karena itu, para peternak harus mampu mengenali penyebab dan ciri-ciri PMK agar dapat melindungi hewan ternaknya secara lebih optimal dan tidak mengalami kerugian.
+
+\n\nPMK disebabkan oleh virus tipe A dari keluarga Picornaviridae, yang menulari dan menyerang hewan ternak berkuku genap seperti kerbau, sapi, kambing, domba dan babi.
+
+\n\nVirus ini mampu bertahan hidup pada tulang, kelenjar dan produksi susu pada hewan ternak. Virus ini menulari lewat udara, kontak langsung antara hewan tertular dan yang tidak tertular, juga melalui kontak tidak langsung melalui perantaraan manusia dan alat dan sarana transportasi yang sudah terkontaminasi.
+
+\n\nDampak yang langsung terlihat setelah hewan ternak terpapar virus ini adalah terjadinya penurunan produksi susu. Bahkan jika terpapar parah, hewan ternak dapat menemui kematian. Oleh karena itu, peternak diajak mencermati berbagai tanda-tanda penularan pada hewan ternaknya.
+
+\n\nTanda pertama yang bisa segera diamati adalah hilangnya nafsu makan pada hewan ternak. Bersamaan dengan itu, biasanya juga ditemukan lepuh atau luka pada gusi, lidah, kuku dan hidung hewan ternak.
+
+\n\nHewan ternak juga biasanya ditemukan memproduksi air liur berlebih. Sejurus kemudian, biasanya hewan ternak mulai terlihat pincang dan tidak mampu berjalan normal.
+
+\n\nJika berbagai gejala ini sudah terlihat, maka peternak diminta segera merespon dengan memisahkan hewan yang tertular dari hewan yang sehat dan mengkarantina hewan ternak selama 14 hari untuk dilakukan pengamatan lebih lanjut.
+
+\n\nSetelah itu, peternak diminta segera menghubungi petugas kesehatan terdekat, untuk selanjutnya dilaporkan pada dinas kesehatan setempat untuk penanganan lebih lanjut.
+
+"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle=""
+                        android:layout_marginBottom="30dp"
+                        />
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

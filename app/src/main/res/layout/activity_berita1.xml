@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".berita1">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backbutton"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/btn_backFromDetailArtikel"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="EduPet"
+                android:textColor="@color/brownPrimary"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomDetailProduct">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:id="@+id/detail_produk"-->
+                    <!--                android:text="Detail Produk"-->
+                    <!--                android:textAlignment="center"-->
+                    <!--                android:textStyle="bold"-->
+                    <!--                android:textSize="24sp"/>-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparant">
+
+                        <!-- Isi tampilan Anda di sini -->
+
+
+                        <ImageView
+                            android:id="@+id/detailImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/berita1" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/greyPrimary"
+                        android:text="Vitamin"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Didukung PHR, Warga Desa di Kampar Ini Sulap Kotoran Sapi Jadi Energi Bersih Ramah Lingkungan"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/detailName"
+                        android:layout_marginBottom="20dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/detailDescriptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tidak terbayangkan oleh pria ini, bila sekarang dirinya memiliki usaha peternakan sapi dari keberaniannya mengolah kotoran hewan itu, dan tetap konsisten meski sempat diragukan oleh tetangga dan para peternak lainnya.
+
+    Setelah 10 tahun sudah berlalu. Sudarman mengenang usahanya itu dimulai dari 2 ekor sapi pada 2013 silam, hingga jumlah sapinya terus bertambah setiap tahun.
+    \n \nSelain beternak, dia juga mengangon atau ikut menggembalakan sapi warga lainnya, hingga pernah mencapai sebanyak 17 ekor sapi yang dipegang.
+
+    Karena sapi sudah banyak, mulailah dibikinkan kendang agar lebih mudah dalam mengelola hewan tersebut di peternakan yang terletak di Desa Mukti Sari, Kecamatan Tapung Kabupaten Kampar. Selain beternak, dia juga melakukan jual beli sapi dan berhasil membangun rumahnya di kampung dari hasil usaha, dan kini masih tersisa 9 ekor yang diternaknya.
+
+    \n \n “Dari ternak sapi ini ada kotoran padat serta cair. Untuk sebagian orang ini adalah limbah dan kerap diabaikan saja. Padahal limbah ini bisa dimanfaatkan dan diolah menjadi sumber energi bersih, bisa dipakai untuk menyalakan kompor lewat biogas yang berasal dari kotoran sapi,” ungkapnya Rabu (2/11/2023).
+
+    Memang langkahnya itu tidak semulus yang dibayangkan. Tetangga ada yang menyebut gas dari kotoran sapi itu tidak sehat dan kemungkinan bisa menularkan bakteri ke makanan yang dimasak memakai biogas itu.
+
+    \n\n Namun Sudarman bergeming. Dia tetap konsisten menjalankan upayanya itu, dan tidak hanya menjadi biogas, kotoran padat dan cair juga diolah lagi menjadi pupuk kompos dan pupuk cair yang ramah lingkungan dan memang terbukti membuat tanaman petani menjadi lebih subur."
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle=""
+                        android:layout_marginBottom="30dp"
+                        />
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
