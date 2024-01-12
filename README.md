@@ -4,3 +4,10 @@ Sebuah aplikasi yang inovatif dan edukatif, yang memberikan pengalaman yang mend
 # Apps
 
 ![Untitled design (2)](https://github.com/fauzihub13/SimFarm/assets/120323608/1f7aa336-f9aa-4b56-a141-cd8ac899ea25)
+
+# Teams
+- Syifa Naura
+- Fauzi Adi Saputra
+- Fatih Kawakib Kartono
+- Rayhan Ananda Hafiz
+
